@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color:#222;
+    color: white;
+    font-family: system-ui;
+}
+#crud{
+    width: 80%;
+    margin: auto;
+}
+.head{
+    text-align: center;
+    font-size: xx-large;
+    margin: 10px 0;
+}
+.head p {
+    margin-top: 10px;
+    text-transform: uppercase;
+
+}
+
+input{
+    width: 95%;
+    height: 30px;
+    outline: none;
+    border: none;
+    background: #111;
+    margin: 4px 0;
+    border-radius: 10px;
+    padding: 10px;
+    color: white;
+    margin-left: 1.5%;
+    font-size: large;
+}
+#DeletAll{
+  margin: 20px 0;  
+}
+input:focus{
+    background: #000;
+    transform: scale(1.01);
+}
+
+.price input{
+    width: 20%;
+}
+#total{
+    background: rgb(193, 0, 0);
+    padding: 5px 2px;
+    border-radius: 4px;
+}
+#total::before{
+    content : 'Total : ';
+
+}
+button{
+    width: 96%;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    background-color: rgba(0, 255, 255, 0.829);
+    border-radius: 20px;
+    margin: 1.5%;
+    transition: 0.5s;
+    font-size: large;
+}
+button:hover{
+    background-color: rgba(247, 209, 160, 0.845);
+    letter-spacing: 1px;
+    color: white;
+}
+.btnSearch{
+    display: flex;
+    justify-content: space-between;
+}
+.btnSearch button{
+    width: 40%;
+}
+table{
+    width: 99%;
+    text-align: center;
+    margin: 10px 0;
+
+}
+table th{
+    text-transform: uppercase;
+}
+th ,td {
+    padding: 5px ;
+}
+p{
+    display: inline-block;
+}

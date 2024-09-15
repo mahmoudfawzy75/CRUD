@@ -87,27 +87,27 @@ function getTotal(){
 }
 //creat product
 var dataPro;
-  if(localStorage.product != null){
+    if(localStorage.product != null){
     dataPro = JSON.parse(localStorage.product)
-  }else{
-      var dataPro = [];
-  }
+    }else{
+        var dataPro = [];
+    }
 
 
-   submit.onclick = function () {
+    submit.onclick = function () {
     let newPro ={
-      title: title.value.toLowerCase(), 
-      price: price.value,
-      taxes: taxes.value,
-      ads: ads.value,
-      discount : discount.value,
-      total: total.innerHTML,
-      count: count.value,
-      category: category.value.toLowerCase(),
+        title: title.value.toLowerCase(), 
+        price: price.value,
+        taxes: taxes.value,
+        ads: ads.value,
+        discount : discount.value,
+        total: total.innerHTML,
+        count: count.value,
+        category: category.value.toLowerCase(),
     }
     if(title.value != '' && price.value != '' && category.value !='' && count.value<=100 ){
         if(mood === 'creat'){
-         if (newPro.count > 1) {
+            if (newPro.count > 1) {
         for (let i = 0; i < newPro.count; i++) {
             dataPro.push(newPro)   
         }
@@ -118,19 +118,15 @@ var dataPro;
         dataPro[tmp] = newPro;
         mood = 'creat' 
         submit.innerHTML = 'Creat'    }
-     clearDate()
+    clearDate()
     }
-       
-    
-   
-
 
     showData()
    //save local storage 
     localStorage.setItem('product' , JSON.stringify(dataPro)  );
     
 
-   }
+    }
 
 //clear inputs
 

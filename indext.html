@@ -10,7 +10,7 @@
     <div class="crud"></div>
 
     <div class="head">
-        <h1>أولاد عبدالمنعم</h1>
+        <h1>CRUD</h1>
         <p>PRODACT MANAGEMENT SYSTEM</p>
 
     </div> 
@@ -20,19 +20,19 @@
         <p></p>
 
         <div class="price">
-            <input onkeyup="getTotal()" type="number" id="price" placeholder="price">
+            <input onkeyup="getTotal()" type="number" id="price" placeholder="price" min="0">
             <p></p>
-            <input onkeyup="getTotal()" type="number" id="taxes" placeholder="taxes">
+            <input onkeyup="getTotal()" type="number" id="taxes" placeholder="taxes" min="0">
             <p></p>
-            <input onkeyup="getTotal()" type="number" id="ads" placeholder="ads">
+            <input onkeyup="getTotal()" type="number" id="ads" placeholder="ads" min="0">
             <p></p>
-            <input onkeyup="getTotal()" type="number" id="discount" placeholder="discount">
+            <input onkeyup="getTotal()" type="number" id="discount" placeholder="discount" min="0">
             <p></p>
             <small  id="total"></small>
         </div>
-        <input type="number" id="count" placeholder="count">
+        <input type="number" id="count" placeholder="count" min="0">
         <p></p>
-        <input type="text" id="category" placeholder="category">
+        <input type="text" id="category" placeholder="category" >
         <p></p>
         <button id="submit">creat</button>
     </div>
@@ -64,7 +64,7 @@
                 <th>delete</th>
             </tr>
             <tbody id="tbody">
-               
+            
             </tbody>
         </table>
     </div>
